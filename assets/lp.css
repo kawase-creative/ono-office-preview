@@ -19,3 +19,16 @@ main,.lp-header{max-width:1024px}.lp-header{min-height:57px;gap:10px;padding:6px
 
 /* Approved detailed cause icons, scoped to this section. */
 .cause-row svg.line-icon{width:64px;height:64px;margin:0 auto 10px;flex-shrink:0}
+
+/* Accessible mobile navigation toggle. */
+@media(max-width:640px){
+.menu.hamburger{position:relative;width:44px;height:44px;min-width:44px;flex-shrink:0;padding:0;border:0;border-radius:8px;background:transparent;color:#0b1546;cursor:pointer}
+.menu.hamburger span{position:absolute;left:10px;display:block;width:24px;height:2px;border-radius:2px;background:currentColor;transition:transform .2s ease,opacity .2s ease,top .2s ease}
+.menu.hamburger span:nth-child(1){top:14px}.menu.hamburger span:nth-child(2){top:21px}.menu.hamburger span:nth-child(3){top:28px}
+.menu.hamburger[aria-expanded="true"] span:nth-child(1){top:21px;transform:rotate(45deg)}
+.menu.hamburger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu.hamburger[aria-expanded="true"] span:nth-child(3){top:21px;transform:rotate(-45deg)}
+.menu.hamburger:focus-visible{outline:2px solid #ca910d;outline-offset:3px}
+.menu.hamburger:hover{background:#edf4fa}
+}
+@media(prefers-reduced-motion:reduce){.menu.hamburger span{transition:none}}
