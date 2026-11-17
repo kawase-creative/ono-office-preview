@@ -71,3 +71,13 @@ main,.lp-header{max-width:1024px}.lp-header{min-height:57px;gap:10px;padding:6px
  .profile-row{grid-template-columns:minmax(0,1fr);padding:0;gap:17px}
  .profile-row>img{width:min(100%,270px);margin:auto}
 }
+
+/* Mobile hero: copy and photograph occupy separate rows. */
+@media(max-width:640px){
+ .lp-hero{height:auto;display:flex;flex-direction:column}
+ .lp-hero .hero-copy{order:0;position:relative;width:100%;padding:20px 20px 24px}
+ .lp-hero .hero-art{order:1;position:relative;inset:auto;width:100%;height:auto;aspect-ratio:624/302;flex-shrink:0}
+ .lp-hero:after{display:none}
+ .hero-question{white-space:nowrap;font-size:clamp(16px,5.1vw,29px);letter-spacing:0}
+ .hero-description{font-size:14px;line-height:1.6;margin-top:20px;overflow-wrap:anywhere}
+}
