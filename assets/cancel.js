@@ -30,6 +30,7 @@ document.querySelectorAll('[data-document]').forEach(button => {
     }
     documentModal.querySelector('#document-title').textContent = title;
     documentModal.showModal();
+    documentModal.querySelector('#document-title').focus({preventScroll:true});
     documentModal.scrollTop = 0;
     document.body.classList.add('document-open');
   });

@@ -14,3 +14,10 @@
 #document-modal{width:min(1040px,96vw)}
 .document-modal-bar{position:sticky;top:-20px;z-index:2;background:#fff;padding:12px 0;border-bottom:1px solid #d6e4ef}
 .document-modal-content figure{margin:16px 0 24px}.document-modal-content img{width:100%;height:auto;border:1px solid #d6e4ef}.document-modal-content figcaption{text-align:center;font-size:13px;margin-top:8px}.original-pdf-link{display:inline-block;color:#064e92;font-weight:bold;text-decoration:underline;padding:12px 0}
+
+/* Plain, centered black close icon; retain a keyboard-only focus indicator. */
+.document-modal-bar button{appearance:none;display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;margin:0;padding:0;line-height:1;color:#111;background:transparent;border:0;border-radius:0;box-shadow:none;transform:none}
+.document-modal-bar button svg{display:block;width:26px;height:26px;pointer-events:none}
+.document-modal-bar button:focus:not(:focus-visible){outline:none}
+.document-modal-bar button:focus-visible{outline:2px solid #111;outline-offset:2px}
+#document-title:focus{outline:none}
