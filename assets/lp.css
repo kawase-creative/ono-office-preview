@@ -42,3 +42,12 @@ main,.lp-header{max-width:1024px}.lp-header{min-height:57px;gap:10px;padding:6px
 .office-photo{display:block;width:100%;height:auto;border-radius:10px;align-self:start}.office-row table{width:100%;min-width:0}.office-row td{overflow-wrap:anywhere}.voice-head .crop-svg{overflow:hidden}
 @media(min-width:641px) and (max-width:1000px){.lp-header .nav{order:5;flex-basis:100%}.lp-header .header-phone{margin-left:auto}}
 @media(max-width:640px){.lp-header .brand strong{font-size:22px}.lp-header .nav{flex:auto;justify-content:flex-start;font-size:14px}.lp-header .header-phone{width:100%}.staff-row{grid-template-columns:minmax(0,1fr)}.staff-row>img{width:min(100%,270px);margin:auto}.staff-row p{font-size:14px}.office-photo{width:100%;max-width:360px;margin:auto}.office-row{grid-template-columns:minmax(0,1fr)}}
+
+/* Keep intrinsic photo dimensions inside their assigned comparison column. */
+.comparison-row{grid-template-columns:minmax(0,25fr) minmax(0,33fr) minmax(0,4fr) minmax(0,38fr)}
+.comparison-row>*{min-width:0;max-width:100%}
+.comparison-row>.photo-crop{width:100%;height:auto;aspect-ratio:237/193;align-self:center;margin:0;justify-self:stretch}
+.comparison-row>.compare{position:relative;isolation:isolate}
+.compare li{overflow-wrap:anywhere}
+@media(min-width:641px) and (max-width:850px){.comparison-row{grid-template-columns:minmax(0,22fr) minmax(0,34fr) minmax(0,3fr) minmax(0,41fr)}}
+@media(max-width:640px){.comparison-row{grid-template-columns:minmax(0,1fr)}.comparison-row>.photo-crop{width:100%;max-width:300px;margin:0 auto;justify-self:center}}
