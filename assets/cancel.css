@@ -9,3 +9,8 @@
 /* Standalone high-resolution hero photo, without reference text overlays. */
 .case-hero .hero-art{object-fit:cover;object-position:65% 55%;width:60%}
 @media(max-width:520px){.case-hero .hero-art{width:75%;object-position:65% 55%}}
+/* Render the supplied original PDFs in full, with all pages in the viewer. */
+.document-zoom>img{display:block;width:100%;height:auto;aspect-ratio:185/262;object-fit:contain;background:#fff}
+#document-modal{width:min(1040px,96vw)}
+.document-modal-bar{position:sticky;top:-20px;z-index:2;background:#fff;padding:12px 0;border-bottom:1px solid #d6e4ef}
+.document-modal-content figure{margin:16px 0 24px}.document-modal-content img{width:100%;height:auto;border:1px solid #d6e4ef}.document-modal-content figcaption{text-align:center;font-size:13px;margin-top:8px}.original-pdf-link{display:inline-block;color:#064e92;font-weight:bold;text-decoration:underline;padding:12px 0}
