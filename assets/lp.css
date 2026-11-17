@@ -81,3 +81,14 @@ main,.lp-header{max-width:1024px}.lp-header{min-height:57px;gap:10px;padding:6px
  .hero-question{white-space:nowrap;font-size:clamp(16px,5.1vw,29px);letter-spacing:0}
  .hero-description{font-size:14px;line-height:1.6;margin-top:20px;overflow-wrap:anywhere}
 }
+
+.features-count{display:inline-flex;align-items:baseline;gap:8px;white-space:nowrap}
+.lp-title .features-count b{margin:-6px 0;}
+@media(max-width:640px){
+ .lp-title.features-title{display:flex;flex-direction:column;align-items:center;gap:3px}
+ .features-title>span{white-space:nowrap}
+ .features-title .features-count{display:inline-flex;gap:8px;align-items:baseline}
+ .features-title .features-count b{margin:0}
+ .invitation{font-size:clamp(10px,3.45vw,19px);line-height:1.8;letter-spacing:0}
+ .invitation-line{white-space:nowrap}
+}
