@@ -114,3 +114,5 @@ main,.lp-header{max-width:1024px}.lp-header{min-height:57px;gap:10px;padding:6px
  .case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .worry-row .checks li:before{top:5px}
 }
+
+@media(max-width:640px){.intro{font-size:14px!important}}
