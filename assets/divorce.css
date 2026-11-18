@@ -31,3 +31,15 @@
 
 .d-case .d-case-illustration{width:76px;height:76px;margin:10px auto 2px;color:#073ca9}
 @media(max-width:760px){.d-case .d-case-illustration{width:68px;height:68px;margin:8px auto 0}}
+
+/* Separate text from the photograph and keep the badge wording intact. */
+.d-badge span{display:block;white-space:nowrap}
+@media(min-width:761px){
+.d-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px;padding:28px 0;min-height:390px;align-items:start;isolation:auto}
+.d-hero-copy{grid-column:1;grid-row:1;max-width:none;background:#fff;position:relative;z-index:1}
+.d-hero-photo{position:absolute;top:28px;bottom:28px;right:0;width:calc((100% - 24px)/2.35);height:calc(100% - 56px);object-fit:cover;object-position:58% center;z-index:0;border-radius:12px}
+.d-hero:after{display:none}.d-hero h1{font-size:clamp(29px,3vw,43px);line-height:1.45;letter-spacing:-.03em}.d-hero h2{font-size:clamp(18px,1.8vw,26px);line-height:1.6}.d-intro{font-size:15px;line-height:1.9;max-width:none}
+.d-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;position:absolute;top:42px;right:14px;width:156px;height:156px;padding:16px 8px;font-size:16px;line-height:1.65;background:#fff;z-index:1;border-width:2px;box-shadow:0 0 0 5px #ffffffb3}
+.d-hero-action{position:relative;grid-column:2;grid-row:1;align-self:end;left:auto;right:auto;bottom:auto;width:auto;margin:230px 12px 14px;z-index:2}.d-cta{font-size:14px;padding:12px 10px;gap:8px}.d-cta .d-icon{width:32px;height:32px}
+}
+@media(min-width:761px) and (max-width:1050px){.d-hero{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px}.d-hero-photo{width:calc((100% - 20px)/2.3)}.d-hero h1{font-size:30px}.d-hero h2{font-size:18px}.d-eyebrow{flex-wrap:wrap;gap:5px}.d-hero-action{margin-left:8px;margin-right:8px}.d-cta{font-size:12px}.d-badge{width:142px;height:142px;font-size:14px}}
