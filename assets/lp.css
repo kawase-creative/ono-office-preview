@@ -116,3 +116,7 @@ main,.lp-header{max-width:1024px}.lp-header{min-height:57px;gap:10px;padding:6px
 }
 
 @media(max-width:640px){.intro{font-size:14px!important}}
+
+/* Consultation photograph between the office details and contact section. */
+.office-consultation{width:calc(100% - 32px);max-width:640px;margin:0 auto 45px}
+.office-consultation img{display:block;width:100%;height:auto;border-radius:12px}
