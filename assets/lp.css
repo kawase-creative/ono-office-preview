@@ -101,3 +101,16 @@ main,.lp-header{max-width:1024px}.lp-header{min-height:57px;gap:10px;padding:6px
  .reasons-title .reasons-count{white-space:nowrap}
  .reasons-title .reasons-count b{margin:0}
 }
+
+/* Client revisions, 2026-11-18. */
+.worry-row li{border-bottom:1px solid var(--line);font-size:18px;line-height:2;color:#151515}
+.worry-row .checks li:before{content:'✓';position:absolute;left:2px;top:0;color:#0873b4;font-size:22px;line-height:1.85;font-weight:800}
+.causes .lp-title{margin-bottom:20px}
+.office table{border-collapse:collapse;width:100%;color:#111;font-size:16px}
+.section{padding-top:40px;padding-bottom:45px}
+.case-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:640px){
+ .invitation{font-size:clamp(10px,5vw,19px);line-height:1.8;letter-spacing:0}
+ .case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .worry-row .checks li:before{top:5px}
+}
