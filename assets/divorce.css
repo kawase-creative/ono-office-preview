@@ -28,3 +28,6 @@
 @media(max-width:640px){.d-modal{width:96vw;max-width:96vw;padding:0 8px 12px}.d-modal-toolbar{padding:4px}.d-document .d-enlarge{font-size:12px}}
 
 .d-document-pages figure{margin:14px 0 24px}.d-document-pages figcaption{text-align:center;color:#315395;font-size:13px}.d-original-pdf{color:#034cab;text-decoration:underline;font-weight:700}
+
+.d-case .d-case-illustration{width:76px;height:76px;margin:10px auto 2px;color:#073ca9}
+@media(max-width:760px){.d-case .d-case-illustration{width:68px;height:68px;margin:8px auto 0}}
