@@ -1,1 +1,9 @@
 .relocation-page .m-hero-visual .d-badge{border-color:#0743c6;color:#073aa7;background:#f7fbff}.relocation-page .d-cost-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.relocation-page .m-cases p,.relocation-page .m-panel.d-flow li p,.relocation-page .m-checks p{font-size:16px}.relocation-page .m-warning{margin-top:20px}.relocation-page .d-hero h1{font-size:clamp(30px,3.5vw,50px)}.relocation-page .m-checks article:last-child{grid-column:1/-1}@media(max-width:760px){.relocation-page .d-cost-grid{grid-template-columns:1fr}.relocation-page .d-hero h1{font-size:clamp(26px,6.2vw,42px)}.relocation-page .m-contact .d-cta{white-space:normal;text-align:center}.relocation-page .m-checks article:last-child{grid-column:auto}}.relocation-page .r-hero-cta{display:inline-flex;margin-top:20px;padding:14px 20px;font-size:15px;line-height:1.6;white-space:normal;text-align:center}
+/* Share title and illustration rows so every description starts together. */
+@media(min-width:761px){
+.relocation-page .m-cases{row-gap:0}
+.relocation-page .m-cases article{display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;justify-items:center;align-items:start}
+.relocation-page .m-cases .m-case-label{align-self:start}
+.relocation-page .m-cases h3{align-self:start}
+.relocation-page .m-cases p{width:100%;margin-top:0}
+}
