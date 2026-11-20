@@ -3,3 +3,6 @@
 .i-page-bar{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;padding:8px;background:white;flex:none;font-size:14px}.i-page-bar button,.i-page-bar a{font:inherit;padding:6px 10px;border:1px solid #c6d5e3;border-radius:4px;background:white;color:#073aa7;cursor:pointer}.i-page-bar button:disabled{opacity:.35;cursor:default}.i-document{aspect-ratio:3/4}.i-document img{height:100%;object-fit:contain}
 /* Center each person directly above its label. */
 .i-transfer article{min-width:0;text-align:center}.i-transfer article>.d-icon{display:block;margin:0 auto}
+
+/* Balance the explanatory copy against the taller checklist on desktop. */
+@media(min-width:761px){.inheritance-page .i-points{align-items:center;column-gap:clamp(24px,3vw,44px)}.inheritance-page .i-points>p{padding:12px 0;line-height:2}}
